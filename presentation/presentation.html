@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         
         <link rel="stylesheet" href="../css/reveal.min.css">
-		<link rel="stylesheet" href="../css/theme/default.css" id="theme">
+		<link rel="stylesheet" href="../css/theme/moon.css" id="theme">
 		<link rel="stylesheet" href="../css/presentation.css">
 		
 		<!-- For syntax highlighting -->
@@ -28,7 +28,6 @@
 		        <section>
     		        <h1>&lt;canvas&gt;</h1>
     		        <h3>Interaktivt Grafiskt HTML5 Element</h3>
-    		            <!-- !! Lägga in lite färg? Samt ändra storlek på h1 !! -->
     		            <p><small>Av Christofer Gumowski</small> </p>
     		            <p><small>1IK415 - cg222im</small></p>
 		        </section>
@@ -62,9 +61,9 @@
 	                
 	                <section>
 	                    <h3>...som en .gif, alltså?</h3>    
-	                    <p><div id="gif"><img src="pics/flower of life.gif"></div><div id="isnot"><img src="pics/isnot.png"></div></p>
+	                    <div id="gif"><img src="pics/floweroflife.gif" alt=".gif of pixelated flower of life in motion"></div><div id="isnot"><img src="pics/isnot.png" alt="A red circle and cross over the flower to signify that it is not correct"></div>
 	                    <p><u>Nej</u>, inte som en gdjiyfff</p>
-	                    &nbsp
+	                    &nbsp;
 	                    <p class="fragment roll-in">En .gif kan ses som en förprogrammerad bildserie som är loopad i sitt befintliga skick</p>
 	                    <p class="fragment roll-in"><br>...medan man med &lt;canvas&gt; kan göra en fullt interaktiv miljö </p>
 	                    
@@ -75,11 +74,11 @@
 	                	<h3>Scalable Vector Graphics</h3>
 	                	<p>SVG har en för användaren liknande funktionalitet</p>
 	                	<p>SVG = vektorbaserat | &lt;canvas&gt; = <a href="http://en.wikipedia.org/wiki/Raster_graphics">rasterbaserat</a></p>
-	                	&nbsp
+	                	&nbsp;
 	                	<p class="fragment roll-in">SVG sparar "penseldrag" som separata objekt som sedan renderas till en bitmap representerat i XML</p>
-	                	&nbsp
+	                	&nbsp;
 	                	<p class="fragment roll-in">Raster sparas "inuti" en bild och skapar en bitmap som korresponderar med det som visas, dvs, en överlappande interaktiv bild</p>
-	                	&nbsp
+	                	&nbsp;
 	                	<p class="fragment roll-in">I relation till SVG ses &lt;canvas&gt; som det nya FLASH
 	                	<br>...och vi kan nog förvänta oss att se dem mer och mer överallt</p>
 	                </section>
@@ -88,22 +87,22 @@
 		        
 		        <section>
 	                <h3>Hur fungerar det?</h3>
-	                &nbsp
+	                &nbsp;
 		            <p class="fragment roll-in">HTML/CSS sajt som vanligt</p>
-		            &nbsp
+		            &nbsp;
 		            <p class="fragment roll-in">&lt;canvas&gt; definieras och ges egenskaper</p>
-		            &nbsp
+		            &nbsp;
 		            <p class="fragment roll-in">Inom elementet finns då möjlighet att scripta Java och i förlängning språk i andra SDKs</p>
-		            &nbsp
+		            &nbsp;
 		            <p class="fragment roll-in">Besökare av sajten får viss definierad tillgänglighet till och inom elementet</p>
 		        </section>
 		        
 		        <section>
 	                <h3>Hur mycket kan man påverka?</h3>
 	                <p>HTML & CSS används för presentation och styling</p>
-	                &nbsp
+	                &nbsp;
 	                <p>Utformning av själva duken samt UI:</p>
-	                &nbsp
+	                &nbsp;
 	                <ul>
 	                	<li class="fragment roll-in">Interaktion och funktion av muspekare</li>
 	                	<li class="fragment roll-in">Magnitud av interaktion (storlek på muspekare, punkttryck...)</li>
@@ -140,7 +139,7 @@
     		                </tbody>
 		                </table>
                     </div>
-                    &nbsp
+                    &nbsp;
                     <p><small>*IE7+ har stöd med hjälp av plugins</small></p>
 	            </section>
 		        
@@ -179,17 +178,19 @@
 		            <section>
 		            	<h3>Optimisering</h3>
 		            	<p>Det finns ofta mer lämpade element än canvas</p>
+		            	&nbsp;
 		            	<p class="fragment roll-in">Öppnar upp för luckor i funktionalitet (Murpy's Law...)</p>
 		            </section>
 		            <section>
 		            	<h3>Prestanda</h3>
 		            	<p>Mer komplexa canvas-element kan kräva oförväntat hög prestanda (t.ex. active ray tracing)</p>
+		            	&nbsp;
 		            	<p class="fragment roll-in">Marknaden måste alltid hålla sig något anpassningsbar till konsumenterna</p>
 		            </section>
 		            <section>
 		            	<h3>Säkerhet</h3>
 		            	<p>Vid interaktion finns det alltid möjlighet att lämna öppna luckor för utvändig påverkan</p>
-		            	&nbsp
+		            	&nbsp;
 		            	<p class="fragment roll-in">T.ex. vid målande på en canvas med vissa transformationer applicerade i Opera kunde resultera i heap buffed overflows.</p>
 		            	<p class="fragment roll-in">Oftast resulterade detta i frysningar och kraschar, men ibland kunde det leda till att kod kunde exekveras</p>
 		            	<p class="fragment roll-in"><small>Fixat i.o.m. Opera 10.61 (2010-08-12)</small></p>
@@ -197,11 +198,11 @@
 		            <section>
 		            	<h3>Säkerhet - fortsättning</h3>
 		            	<p>Ett problem visar på att det finns flera</p>
-		            	&nbsp
+		            	&nbsp;
 		            	<p class="fragment roll-in">Problemet är HTML5, inte canvas, som utnyttjas av marknaden innan alla säkerhetshål är upptäckta och tilltäppta</p>
-		            	&nbsp
+		            	&nbsp;
 		            	<p class="fragment roll-in">Konsumentmarknanden blir allt mer vardaglig med sitt surfance och i många fall mindre medvetna om riskerna däri</p>
-		            	&nbsp
+		            	&nbsp;
 		            	<p class="fragment roll-in">W3C i starkt samarbete med utvecklare</p>
 		            </section>
 
