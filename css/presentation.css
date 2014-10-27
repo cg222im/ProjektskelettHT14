@@ -5,13 +5,19 @@
     border-width: 5px;
     border-color: #DCDCDC;
     text-align: center;
-    margin-left: auto;
-    font-size: 35px;
+    font-size: 34px;
 
 
 }
 
 table, th, td {
+    text-align: center;
+    border-style:solid;
+    border-width:2px;
+    border-color:#DCDCDC;
     
 
+}
+h1 {
+    font-size:100px;
 }

@@ -27,7 +27,7 @@
 		    <div class="slides">
 		        <section>
     		        <h1>&lt;canvas&gt;</h1>
-    		        <h3>HTML5 Element</h3>
+    		        <h3>Interaktivt Grafiskt HTML5 Element</h3>
     		            
     		            <!-- !! Lägga in lite färg? Samt ändra storlek på h1 !! -->
     		            <p><small>Av Christofer Gumowski</small> </p>
@@ -40,10 +40,9 @@
 		            <ul>
 		            	<li>Vad är det?</li>
 		            	<li>...utvecklat.</li>
-		            	<li>I relation till, i jämförelse med...</li>
 		            	<li>Hur fungerar det?</li>
-		            	<li>Stöd i utforskare</li>
 		            	<li>Hur man kan bygga</li>
+		            	<li>Stöd i utforskare</li>
 		            	<li>Användningsområden?</li>
 		            	<li>Exempel</li>
 		            	<li>Misuse</li>
@@ -54,24 +53,38 @@
 		        <section>
 	                <section>
 		                <h3>Vad är canvas-elementet?</h3>
-		                <p>&lt;canvas&gt; defineras som en upplösnings-beroende bitmap duk</p>
+		                <p>&lt;canvas&gt; definieras som en upplösnings-beroende bitmap duk</p>
 		                <p>som används för rendering av grafer, spelgrafik eller andra visuella bilder i farten</p>
 	                </section>
 	                
 	                <section>
 	                    <h3>Jaha?</h3>    
-	                    <p>Med andra ord så är &lt;canvas&gt; en rektangel på en sida däri man kan använda JavaScript för visualisera bilder</p>
+	                    <p>Med andra ord så är &lt;canvas&gt; en rektangel på en sajt däri man kan använda JavaScript för att visualisera bilder (bitmaps)</p>
 	                </section>
 	                
 	                <section>
 	                    <h3>...som en .gif, alltså?</h3>    
-	                    <p>Nej, inte som en gdjiyfyff</p>
-	                    <!-- heller inte en SVG, om än funktionaliteten är lik
-	                    SVG = vektorbaserat, canvas = rasterbaserat (raster graphics, länk till wikipedia)
-	                    SVG sparar sina "penseldrag" som separata objekt som sedan renderar en bitmap representerat i XML
-	                    Raster sparas i bild och skapar en bitmap som korresponderar med bilden som visas
-	                    dvs, överlappande interaktiv bild!
-	                    -->
+	                    <p>Nej, inte som en gdjiyfff</p>
+	                    &nbsp
+	                    <!-- drop down/appear -->
+	                    <p class="fragment roll-in">En .gif kan ses som en förprogrammerad bildserie</p>
+	                    <p class="fragment roll-in">medan man med &lt;canvas&gt; kan göra en fullt interaktiv miljö </p>
+	                    
+	                    
+	                </section>
+	                
+	                <section>
+	                	<h3>SVG</h3>
+	                	<p>SVG har en för användaren liknande funktionalitet</p>
+	                	<p>SVG = vektorbaserat | &lt;canvas&gt; = <a href="http://en.wikipedia.org/wiki/Raster_graphics">rasterbaserat</a></p>
+	                	&nbsp
+	                	<p class="fragment roll-in">SVG sparar "penseldrag" som separata objekt som sedan renderas till en bitmap representerat i XML</p>
+	                	&nbsp
+	                	<p class="fragment roll-in">Raster sparas "inuti" en bild och skapar en bitmap som korresponderar med det som visas, dvs, en överlappande interaktiv bild</p>
+	                	&nbsp
+	                	<!-- drop down/appear -->
+	                	<p class="fragment roll-in">I relation till SVG ses &lt;canvas&gt; som det nya FLASH
+	                	<br>...och vi kan nog förvänta oss att se dem överallt, mer och mer</p>
 	                </section>
 		                
 		        </section>
@@ -82,21 +95,25 @@
 		        </section>
 		        
 		        <section>
+	                <h3>Hur mycket kan man påverka?</h3>
+		                <!--
+		                HTML & CSS för presentation
+		                Storlek och placering av canvas
+		                Styrning inom canvas (mus, tangenter, storlek)
+		                
+		                JavaScript för programmering (Lager, UIs)
+		                
+		                -->
+		        </section>
+		        
+		        <section>
 	                <h3>Vilka utforskare stöder &lt;canvas&gt;?</h3>
 	                <div id="browsertable">
 		                <table>
-    		                <thead>
-    		                    <tr>
-    		                        <th colspan="14">Naturligt stöd för &lt;canvas&gt;</th>
-                                    
-    		                    </tr>
-    		                </thead>
-
     		                <tbody>
-        		           
     		                    <tr>
     		                        <!-- fix up! -->
-    		                        <th>IE</th>
+    		                        <th>IE*</th>
     		                        <th>FIREFOX</th>
     		                        <th>SAFARI</th>
     		                        <th>CHROME</th>
@@ -117,19 +134,11 @@
     		                </tbody>
 		                </table>
                     </div>
+                    &nbsp
+                    <p><small>*IE7+ har stöd med hjälp av plugins</small></p>
 	            </section>
 		        
-		        <section>
-	                <h3>Hur mycket kan man påverka?</h3>
-		                <!--
-		                HTML & CSS för presentation
-		                Storlek och placering av canvas
-		                Styrning inom canvas (mus, tangenter, storlek)
-		                
-		                JavaScript för programmering (Lager, UIs)
-		                
-		                -->
-		        </section>
+		        
 		        
 		        <section>
 	                <h3>Vad är användningsområdena för detta?</h3>
@@ -142,9 +151,11 @@
 		        
 		        <section>
 	                <h3>Visa lite exempel!</h3>
-		                <!-- Zen Photon Garden - https://developer.mozilla.org/en-US/demos/detail/zen-photon-garden/launch 
-		                Free Rider 2 - http://www.freeriderhd.com/t/1016-layers
-		                -->
+		                <p><a href="https://developer.mozilla.org/en-US/demos/detail/zen-photon-garden/launch">Zen Photon Garden</a></p>
+		                <p><a href="http://www.freeriderhd.com/t/1016-layers">Free Rider 2</a></p>
+		                <!-- drop down/appear -->
+		                <p class="fragment roll-in">Reveal.js !</p>
+
 		        </section>
 		        
 		        <section>
