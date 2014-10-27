@@ -1,23 +1,22 @@
 #browsertable {
-
     display:block;
     border-style: solid;
     border-width: 5px;
     border-color: #DCDCDC;
-    text-align: center;
     font-size: 34px;
-
-
 }
-
-table, th, td {
-    text-align: center;
-    border-style:solid;
-    border-width:2px;
-    border-color:#DCDCDC;
-    
-
+#gif  {
+    z-index: 0;
+    display:block;
+    height:460px;
+    width:460px;
+    float:right;
 }
-h1 {
-    font-size:100px;
+#isnot {
+    z-index:10;
+    display:block;
+    height:460px;
+    width:460px;
+    margin-right:-460px;
+    float:right;
 }
