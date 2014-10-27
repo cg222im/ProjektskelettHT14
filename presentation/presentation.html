@@ -66,6 +66,12 @@
 	                <section>
 	                    <h3>...som en .gif, alltså?</h3>    
 	                    <p>Nej, inte som en gdjiyfyff</p>
+	                    <!-- heller inte en SVG, om än funktionaliteten är lik
+	                    SVG = vektorbaserat, canvas = rasterbaserat (raster graphics, länk till wikipedia)
+	                    SVG sparar sina "penseldrag" som separata objekt som sedan renderar en bitmap representerat i XML
+	                    Raster sparas i bild och skapar en bitmap som korresponderar med bilden som visas
+	                    dvs, överlappande interaktiv bild!
+	                    -->
 	                </section>
 		                
 		        </section>
@@ -115,17 +121,30 @@
 		        
 		        <section>
 	                <h3>Hur mycket kan man påverka?</h3>
+		                <!--
+		                HTML & CSS för presentation
+		                Storlek och placering av canvas
+		                Styrning inom canvas (mus, tangenter, storlek)
 		                
+		                JavaScript för programmering (Lager, UIs)
+		                
+		                -->
 		        </section>
 		        
 		        <section>
 	                <h3>Vad är användningsområdena för detta?</h3>
-		                
+		                <!-- interaktiva presentationsmiljöer 
+		                Appar till Communities och browsers (Facebook)
+		                spel (Unity, UDK, JavaScript
+		                interaktiv grafik
+		                -->
 		        </section>
 		        
 		        <section>
 	                <h3>Visa lite exempel!</h3>
-		                
+		                <!-- Zen Photon Garden - https://developer.mozilla.org/en-US/demos/detail/zen-photon-garden/launch 
+		                Free Rider 2 - http://www.freeriderhd.com/t/1016-layers
+		                -->
 		        </section>
 		        
 		        <section>
@@ -134,7 +153,23 @@
 		            	prestanda
 		            	säkerhet
 		            	
-		            
+		            	"Authors should not use the canvas element in a document when a more
+		            	suitable element is available. For example, it is inappropriate to use 
+		            	a canvas element to render a page heading: if the desired presentation of the heading is graphically intense, 
+		            	it should be marked up using appropriate elements (typically h1) and then styled using CSS and supporting technologies."
+		            	
+		            	W3C har bjudits in för hjälp med tillgänglighet i canvas
+		            	
+		            	"Performing some painting operations on a canvas while certain transformations
+		            	are being applied in Opera may result in heap buffer overflows. In most cases Opera
+		            	will just freeze or terminate, but in some cases this could lead to a crash which could be used to execute code." (12-08-2010)
+		            	fixat iom Opera 10.61
+		            	
+		            	ett problem visar på att det säkerligen finns flera
+		            	problemet i sig är inte canvas utan HTML5
+		            	utnyttjas av marknaden innan alla säkerhetshål är upptäckta och fixade
+		            	samt att konsumentmarknaden blir mer och mer vardaglig med sitt surfance
+		            	och i många fall mindre medvetna om riskerna däri.
 		            -->
 		        </section>
 		        
